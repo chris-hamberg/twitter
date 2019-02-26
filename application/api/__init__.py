@@ -1,0 +1,36 @@
+try:
+    from twitter.application.api.account import account
+    from twitter.application.api.application import application
+    from twitter.application.api.blocks import blocks
+    from twitter.application.api.collections import collections
+    from twitter.application.api.direct_messages import direct_messages
+    from twitter.application.api.favorites import favorites
+    from twitter.application.api.followers import followers
+    from twitter.application.api.friends import friends
+    from twitter.application.api.friendships import friendships
+    from twitter.application.api.geo import geo
+    from twitter.application.api.lists import lists
+    from twitter.application.api.media import media
+    from twitter.application.api.mutes import mutes
+    from twitter.application.api.saved_searches import saved_searches
+    from twitter.application.api.statuses import statuses
+    from twitter.application.api.trends import trends
+    from twitter.application.api.users import users
+except ModuleNotFoundError as main:
+    from application.api.account import account
+    from application.api.application import application
+    from application.api.blocks import blocks
+    from application.api.collections import collections
+    from application.api.direct_messages import direct_messages
+    from application.api.favorites import favorites
+    from application.api.followers import followers
+    from application.api.friends import friends
+    from application.api.friendships import friendships
+    from application.api.geo import geo
+    from application.api.lists import lists
+    from application.api.media import media
+    from application.api.mutes import mutes
+    from application.api.saved_searches import saved_searches
+    from application.api.statuses import statuses
+    from application.api.trends import trends
+    from application.api.users import users

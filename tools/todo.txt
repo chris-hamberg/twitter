@@ -1,0 +1,14 @@
+1. media/upload
+   - add video support to multipart media upload, connect it to the client
+   - currently only base64 is working. try to get raw binary to work for all
+     media/upload endpoints (I think there is a malfunction server side)
+
+2. complete direct_messages.welcome_messages and direct_messages.rules endpoints
+
+3. make sure endpoints are correspondent with rate_limit_status keys (
+   (when the keys exist)
+   This will involve parsing the test.log for endpoints that register as
+   inf, and cross checking them against the actual rate_limit_status
+   response. differences will require updating the class endpoint attribute
+   for that endpoint. (Most of the endpoints, if not all, should be
+   completely accurate. This item is #TODO as a sanity check.)

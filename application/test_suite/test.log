@@ -1,0 +1,170 @@
+ 2019-02-20 00:41:27,349 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-02-20 00:41:27,350 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-02-20 00:41:27,351 - INFO @ twitter.py [93]: 0x7f6fff8f8a20 has been defined
+ 2019-02-20 00:41:27,351 - INFO @ twitter.py [146]: loaded OAuth ChrisHamberg
+ 2019-02-20 00:41:27,352 - INFO @ twitter.py [184]: MOCK: False
+ 2019-02-20 00:41:27,352 - INFO @ driver.py [35]: [TESTING]: users module
+ 2019-02-20 00:41:27,353 - INFO @ twitter.py [195]: CACHE LOCKED: True
+ 2019-02-20 00:41:27,550 - INFO @ connection.py [67]: 200: application/rate_limit_status: limit: inf
+ 2019-02-20 00:41:27,553 - INFO @ twitter.py [195]: CACHE LOCKED: False
+ 2019-02-20 00:41:27,784 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/users/lookup.json?screen_name=MegaDopeBeatz%2C&include_entities=False
+ 2019-02-20 00:41:28,001 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/users/show.json?screen_name=MegaDopeBeatz&include_entities=False
+ 2019-02-20 00:41:28,429 - INFO @ connection.py [67]: 200: users/search: limit: 899
+ 2019-02-20 00:41:28,589 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/users/profile_banner.json?screen_name=MegaDopeBeatz
+ 2019-02-20 00:41:28,774 - INFO @ connection.py [67]: 200: users/suggestions: limit: 14
+ 2019-02-20 00:41:29,090 - INFO @ connection.py [67]: 200: users/report_spam: limit: 14
+ 2019-02-20 00:41:29,331 - INFO @ connection.py [67]: 200: users/suggestions/music: limit: 14
+ 2019-02-20 00:41:29,521 - INFO @ connection.py [67]: 200: users/suggestions/music: limit: 13
+ 2019-02-20 00:41:29,522 - ERROR @ evaluate.py [14]: [FAIL]: users.lookup 
+ 2019-02-20 00:41:29,523 - ERROR @ evaluate.py [14]: [FAIL]: users.show 
+ 2019-02-20 00:41:29,523 - ERROR @ evaluate.py [14]: [FAIL]: users.profile_banner 
+ 2019-02-20 00:41:29,523 - ERROR @ driver.py [41]: [FAIL]: users module
+ 2019-02-20 00:41:29,524 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:41:34,527 - INFO @ driver.py [35]: [TESTING]: trends module
+ 2019-02-20 00:41:34,702 - INFO @ connection.py [67]: 200: trends/available: limit: 74
+ 2019-02-20 00:41:35,975 - INFO @ connection.py [67]: 200: trends/place: limit: 74
+ 2019-02-20 00:41:36,181 - INFO @ connection.py [67]: 200: trends/closest: limit: 74
+ 2019-02-20 00:41:36,182 - INFO @ driver.py [43]: [PASS]: trends module
+ 2019-02-20 00:41:36,182 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:41:41,187 - INFO @ driver.py [35]: [TESTING]: statuses module
+ 2019-02-20 00:41:41,456 - INFO @ connection.py [67]: 200: statuses/mentions_timeline: limit: 74
+ 2019-02-20 00:41:41,713 - INFO @ connection.py [67]: 200: statuses/user_timeline: limit: 899
+ 2019-02-20 00:41:42,080 - INFO @ connection.py [67]: 200: statuses/home_timeline: limit: 14
+ 2019-02-20 00:41:42,279 - INFO @ connection.py [67]: 200: statuses/retweets_of_me: limit: 74
+ 2019-02-20 00:41:42,486 - INFO @ connection.py [67]: 200: statuses/retweets/1033555529187172352: limit: 74
+ 2019-02-20 00:41:42,645 - INFO @ connection.py [67]: 200: statuses/show: limit: 899
+ 2019-02-20 00:41:42,982 - INFO @ connection.py [67]: 200: statuses/retweet/1033555529187172352: limit: inf
+ 2019-02-20 00:41:43,183 - INFO @ connection.py [67]: 200: statuses/unretweet/1033555529187172352: limit: inf
+ 2019-02-20 00:41:48,422 - INFO @ connection.py [67]: 200: oembed?url=https%3A%2F%2Ftwitter: limit: 179
+ 2019-02-20 00:41:48,932 - INFO @ connection.py [67]: 200: statuses/retweeters/ids: limit: 74
+ 2019-02-20 00:41:49,114 - INFO @ connection.py [67]: 200: statuses/lookup: limit: 899
+ 2019-02-20 00:41:49,360 - INFO @ connection.py [67]: 200: statuses/update: limit: inf
+ 2019-02-20 00:41:50,587 - INFO @ connection.py [67]: 200: statuses/user_timeline: limit: 898
+ 2019-02-20 00:41:50,814 - INFO @ connection.py [67]: 200: statuses/destroy: limit: inf
+ 2019-02-20 00:41:50,816 - INFO @ driver.py [43]: [PASS]: statuses module
+ 2019-02-20 00:41:50,816 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:41:55,818 - INFO @ driver.py [35]: [TESTING]: saved_searches module
+ 2019-02-20 00:41:56,055 - INFO @ connection.py [67]: 200: saved_searches/create: limit: inf
+ 2019-02-20 00:41:56,206 - INFO @ connection.py [67]: 200: saved_searches/list: limit: 14
+ 2019-02-20 00:41:56,403 - INFO @ connection.py [67]: 200: saved_searches/show/1098020260333215744: limit: inf
+ 2019-02-20 00:41:56,670 - INFO @ connection.py [67]: 200: saved_searches/destroy/1098020260333215744: limit: inf
+ 2019-02-20 00:41:56,672 - INFO @ driver.py [43]: [PASS]: saved_searches module
+ 2019-02-20 00:41:56,672 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:01,677 - INFO @ driver.py [35]: [TESTING]: mutes module
+ 2019-02-20 00:42:01,894 - INFO @ connection.py [67]: 200: mutes/users/create: limit: inf
+ 2019-02-20 00:42:02,119 - INFO @ connection.py [67]: 200: mutes/users/ids: limit: 14
+ 2019-02-20 00:42:02,350 - INFO @ connection.py [67]: 200: mutes/users/list: limit: 14
+ 2019-02-20 00:42:02,642 - INFO @ connection.py [67]: 200: mutes/users/destroy: limit: inf
+ 2019-02-20 00:42:02,643 - INFO @ driver.py [43]: [PASS]: mutes module
+ 2019-02-20 00:42:02,643 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:07,648 - INFO @ driver.py [35]: [TESTING]: media module
+ 2019-02-20 00:42:07,651 - INFO @ base64encode.py [23]: test_img.jpg successfully encoded to base64.
+ 2019-02-20 00:42:08,370 - INFO @ connection.py [67]: 200: : limit: 499
+ 2019-02-20 00:42:08,372 - INFO @ driver.py [43]: [PASS]: media module
+ 2019-02-20 00:42:08,372 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:13,377 - INFO @ driver.py [35]: [TESTING]: lists module
+ 2019-02-20 00:42:13,551 - INFO @ connection.py [67]: 200: lists/create: limit: inf
+ 2019-02-20 00:42:13,793 - INFO @ connection.py [67]: 200: lists/list: limit: 14
+ 2019-02-20 00:42:13,985 - INFO @ connection.py [67]: 200: lists/statuses: limit: 899
+ 2019-02-20 00:42:14,609 - INFO @ connection.py [67]: 200: lists/memberships: limit: 74
+ 2019-02-20 00:42:14,817 - INFO @ connection.py [67]: 200: lists/subscribers: limit: 179
+ 2019-02-20 00:42:14,970 - INFO @ connection.py [67]: 200: lists/members: limit: 899
+ 2019-02-20 00:42:15,176 - INFO @ connection.py [67]: 200: lists/update: limit: inf
+ 2019-02-20 00:42:15,358 - INFO @ connection.py [67]: 200: lists/show: limit: 74
+ 2019-02-20 00:42:15,740 - INFO @ connection.py [67]: 200: lists/subscriptions: limit: 14
+ 2019-02-20 00:42:15,963 - INFO @ connection.py [67]: 200: lists/ownerships: limit: 14
+ 2019-02-20 00:42:16,216 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/lists/members/create.json?list_id=1098020333892890624&screen_name=MegaDopeBeatz
+ 2019-02-20 00:42:16,488 - INFO @ connection.py [67]: 200: lists/members/create_all: limit: inf
+ 2019-02-20 00:42:16,671 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/lists/members/show.json?list_id=1098020333892890624&screen_name=MegaDopeBeatz&include_entities=False&skip_status=False
+ 2019-02-20 00:42:16,876 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/lists/members/destroy.json?list_id=1098020333892890624&screen_name=MegaDopeBeatz
+ 2019-02-20 00:42:17,062 - INFO @ connection.py [67]: 200: lists/members/destroy_all: limit: inf
+ 2019-02-20 00:42:17,349 - INFO @ connection.py [67]: 200: lists/destroy: limit: inf
+ 2019-02-20 00:42:17,545 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/lists/subscribers/create.json?list_id=102476661
+ 2019-02-20 00:42:17,698 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/lists/subscribers/show.json?list_id=102476661&screen_name=ChrisHamberg&include_entities=False&skip_status=False
+ 2019-02-20 00:42:17,937 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/lists/subscribers/destroy.json?list_id=102476661
+ 2019-02-20 00:42:17,939 - INFO @ driver.py [43]: [PASS]: lists module
+ 2019-02-20 00:42:17,939 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:22,945 - INFO @ driver.py [35]: [TESTING]: geo module
+ 2019-02-20 00:42:23,130 - INFO @ connection.py [67]: 200: geo/reverse_geocode: limit: 14
+ 2019-02-20 00:42:23,299 - INFO @ connection.py [67]: 200: geo/id/00bc52ea1fc46565: limit: inf
+ 2019-02-20 00:42:23,487 - INFO @ connection.py [67]: 200: geo/search: limit: 14
+ 2019-02-20 00:42:23,488 - INFO @ driver.py [43]: [PASS]: geo module
+ 2019-02-20 00:42:23,488 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:28,491 - INFO @ driver.py [35]: [TESTING]: friendships module
+ 2019-02-20 00:42:28,681 - INFO @ connection.py [67]: 200: friendships/no_retweets/ids: limit: 14
+ 2019-02-20 00:42:28,872 - INFO @ connection.py [67]: 200: friendships/incoming: limit: 14
+ 2019-02-20 00:42:29,027 - INFO @ connection.py [67]: 200: friendships/outgoing: limit: 14
+ 2019-02-20 00:42:29,213 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/friendships/create.json?screen_name=MegaDopeBeatz&follow=False
+ 2019-02-20 00:42:29,431 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/friendships/update.json?screen_name=MegaDopeBeatz&device=True&retweets=False
+ 2019-02-20 00:42:29,653 - INFO @ connection.py [67]: 200: friendships/show: limit: 179
+ 2019-02-20 00:42:29,858 - INFO @ connection.py [67]: 200: friendships/lookup: limit: 14
+ 2019-02-20 00:42:29,859 - ERROR @ evaluate.py [14]: [FAIL]: friendships.create 
+ 2019-02-20 00:42:29,867 - ERROR @ evaluate.py [14]: [FAIL]: friendships.update 
+ 2019-02-20 00:42:29,867 - ERROR @ driver.py [41]: [FAIL]: friendships module
+ 2019-02-20 00:42:29,867 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:34,873 - INFO @ driver.py [35]: [TESTING]: friends module
+ 2019-02-20 00:42:35,044 - INFO @ connection.py [67]: 200: friends/ids: limit: 14
+ 2019-02-20 00:42:35,291 - INFO @ connection.py [67]: 200: friends/list: limit: 14
+ 2019-02-20 00:42:35,294 - INFO @ driver.py [43]: [PASS]: friends module
+ 2019-02-20 00:42:35,294 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:40,297 - INFO @ driver.py [35]: [TESTING]: followers module
+ 2019-02-20 00:42:40,467 - INFO @ connection.py [67]: 200: followers/ids: limit: 14
+ 2019-02-20 00:42:40,827 - INFO @ connection.py [67]: 200: followers/list: limit: 14
+ 2019-02-20 00:42:40,828 - INFO @ driver.py [43]: [PASS]: followers module
+ 2019-02-20 00:42:40,828 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:45,834 - INFO @ driver.py [35]: [TESTING]: favorites module
+ 2019-02-20 00:42:46,098 - INFO @ connection.py [67]: 200: favorites/list: limit: 74
+ 2019-02-20 00:42:46,355 - INFO @ connection.py [67]: 200: favorites/create: limit: inf
+ 2019-02-20 00:42:46,602 - INFO @ connection.py [67]: 200: favorites/destroy: limit: inf
+ 2019-02-20 00:42:46,603 - INFO @ driver.py [43]: [PASS]: favorites module
+ 2019-02-20 00:42:46,604 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:42:51,607 - INFO @ driver.py [35]: [TESTING]: direct_messages module
+ 2019-02-20 00:42:52,102 - INFO @ connection.py [67]: 200: direct_messages/events/show: limit: 14
+ 2019-02-20 00:42:52,536 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/direct_messages/events/new.json
+ 2019-02-20 00:42:52,723 - INFO @ connection.py [67]: 200: direct_messages/events/list: limit: 14
+ 2019-02-20 00:42:53,244 - INFO @ connection.py [67]: 204: direct_messages/mark_read: limit: 999
+ 2019-02-20 00:42:58,450 - INFO @ connection.py [67]: 204: direct_messages/indicate_typing: limit: inf
+ 2019-02-20 00:42:58,451 - INFO @ driver.py [43]: [PASS]: direct_messages module
+ 2019-02-20 00:42:58,451 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:43:03,457 - INFO @ driver.py [35]: [TESTING]: collections module
+ 2019-02-20 00:43:03,699 - INFO @ connection.py [67]: 200: account/verify_credentials: limit: 74
+ 2019-02-20 00:43:03,910 - INFO @ connection.py [67]: 200: statuses/user_timeline: limit: 897
+ 2019-02-20 00:43:04,204 - INFO @ connection.py [67]: 200: collections/create: limit: inf
+ 2019-02-20 00:43:04,482 - INFO @ connection.py [67]: 200: collections/list: limit: 999
+ 2019-02-20 00:43:04,740 - INFO @ connection.py [67]: 200: collections/entries: limit: 999
+ 2019-02-20 00:43:04,994 - INFO @ connection.py [67]: 200: collections/show: limit: 999
+ 2019-02-20 00:43:05,210 - INFO @ connection.py [67]: 200: collections/entries/add: limit: inf
+ 2019-02-20 00:43:05,421 - INFO @ connection.py [67]: 200: collections/entries/add: limit: inf
+ 2019-02-20 00:43:05,630 - INFO @ connection.py [67]: 200: collections/entries/curate: limit: inf
+ 2019-02-20 00:43:05,833 - INFO @ connection.py [67]: 200: collections/entries/move: limit: inf
+ 2019-02-20 00:43:06,084 - INFO @ connection.py [67]: 200: collections/entries/remove: limit: inf
+ 2019-02-20 00:43:06,345 - INFO @ connection.py [67]: 200: collections/update: limit: inf
+ 2019-02-20 00:43:06,546 - INFO @ connection.py [67]: 200: collections/destroy: limit: inf
+ 2019-02-20 00:43:06,547 - INFO @ driver.py [43]: [PASS]: collections module
+ 2019-02-20 00:43:06,548 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:43:11,552 - INFO @ driver.py [35]: [TESTING]: blocks module
+ 2019-02-20 00:43:12,021 - INFO @ connection.py [67]: 200: blocks/list: limit: 14
+ 2019-02-20 00:43:12,201 - INFO @ connection.py [67]: 200: blocks/ids: limit: 14
+ 2019-02-20 00:43:12,530 - INFO @ connection.py [67]: 200: blocks/create: limit: inf
+ 2019-02-20 00:43:12,852 - INFO @ connection.py [67]: 200: blocks/destroy: limit: inf
+ 2019-02-20 00:43:12,854 - INFO @ driver.py [43]: [PASS]: blocks module
+ 2019-02-20 00:43:12,854 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:43:17,859 - INFO @ driver.py [35]: [TESTING]: application module
+ 2019-02-20 00:43:17,859 - INFO @ driver.py [43]: [PASS]: application module
+ 2019-02-20 00:43:17,859 - INFO @ driver.py [49]:  sleeping for 5 seconds
+ 2019-02-20 00:43:22,865 - INFO @ driver.py [35]: [TESTING]: account module
+ 2019-02-20 00:43:23,029 - INFO @ connection.py [67]: 200: account/settings: limit: 14
+ 2019-02-20 00:43:23,289 - INFO @ connection.py [67]: 200: account/verify_credentials: limit: 73
+ 2019-02-20 00:43:23,588 - INFO @ connection.py [67]: 200: account/settings: limit: inf
+ 2019-02-20 00:43:23,848 - INFO @ connection.py [67]: 200: account/settings: limit: inf
+ 2019-02-20 00:43:24,093 - INFO @ connection.py [67]: 200: account/update_profile: limit: 14
+ 2019-02-20 00:43:24,331 - INFO @ connection.py [67]: 200: account/update_profile: limit: 13
+ 2019-02-20 00:43:24,334 - INFO @ base64encode.py [23]: _test_img.jpg successfully encoded to base64.
+ 2019-02-20 00:43:25,030 - INFO @ connection.py [67]: 200: account/update_profile_image: limit: inf
+ 2019-02-20 00:43:25,032 - INFO @ base64encode.py [23]: test_img.jpg successfully encoded to base64.
+ 2019-02-20 00:43:25,856 - INFO @ connection.py [67]: 200: account/update_profile_image: limit: inf
+ 2019-02-20 00:43:25,860 - INFO @ base64encode.py [23]: test_banner.png successfully encoded to base64.
+ 2019-02-20 00:43:27,549 - INFO @ connection.py [67]: 201: account/update_profile_banner: limit: inf
+ 2019-02-20 00:43:28,080 - INFO @ connection.py [67]: 200: account/remove_profile_banner: limit: inf
+ 2019-02-20 00:43:28,082 - INFO @ driver.py [43]: [PASS]: account module
+ 2019-02-20 00:43:28,082 - ERROR @ driver.py [58]: completed package test with 2 failure(s).

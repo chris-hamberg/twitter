@@ -1,170 +1,290 @@
- 2019-02-20 00:41:27,349 - INFO @ twitter.py [53]: loaded application.registry.model.Database
- 2019-02-20 00:41:27,350 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
- 2019-02-20 00:41:27,351 - INFO @ twitter.py [93]: 0x7f6fff8f8a20 has been defined
- 2019-02-20 00:41:27,351 - INFO @ twitter.py [146]: loaded OAuth ChrisHamberg
- 2019-02-20 00:41:27,352 - INFO @ twitter.py [184]: MOCK: False
- 2019-02-20 00:41:27,352 - INFO @ driver.py [35]: [TESTING]: users module
- 2019-02-20 00:41:27,353 - INFO @ twitter.py [195]: CACHE LOCKED: True
- 2019-02-20 00:41:27,550 - INFO @ connection.py [67]: 200: application/rate_limit_status: limit: inf
- 2019-02-20 00:41:27,553 - INFO @ twitter.py [195]: CACHE LOCKED: False
- 2019-02-20 00:41:27,784 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/users/lookup.json?screen_name=MegaDopeBeatz%2C&include_entities=False
- 2019-02-20 00:41:28,001 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/users/show.json?screen_name=MegaDopeBeatz&include_entities=False
- 2019-02-20 00:41:28,429 - INFO @ connection.py [67]: 200: users/search: limit: 899
- 2019-02-20 00:41:28,589 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/users/profile_banner.json?screen_name=MegaDopeBeatz
- 2019-02-20 00:41:28,774 - INFO @ connection.py [67]: 200: users/suggestions: limit: 14
- 2019-02-20 00:41:29,090 - INFO @ connection.py [67]: 200: users/report_spam: limit: 14
- 2019-02-20 00:41:29,331 - INFO @ connection.py [67]: 200: users/suggestions/music: limit: 14
- 2019-02-20 00:41:29,521 - INFO @ connection.py [67]: 200: users/suggestions/music: limit: 13
- 2019-02-20 00:41:29,522 - ERROR @ evaluate.py [14]: [FAIL]: users.lookup 
- 2019-02-20 00:41:29,523 - ERROR @ evaluate.py [14]: [FAIL]: users.show 
- 2019-02-20 00:41:29,523 - ERROR @ evaluate.py [14]: [FAIL]: users.profile_banner 
- 2019-02-20 00:41:29,523 - ERROR @ driver.py [41]: [FAIL]: users module
- 2019-02-20 00:41:29,524 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:41:34,527 - INFO @ driver.py [35]: [TESTING]: trends module
- 2019-02-20 00:41:34,702 - INFO @ connection.py [67]: 200: trends/available: limit: 74
- 2019-02-20 00:41:35,975 - INFO @ connection.py [67]: 200: trends/place: limit: 74
- 2019-02-20 00:41:36,181 - INFO @ connection.py [67]: 200: trends/closest: limit: 74
- 2019-02-20 00:41:36,182 - INFO @ driver.py [43]: [PASS]: trends module
- 2019-02-20 00:41:36,182 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:41:41,187 - INFO @ driver.py [35]: [TESTING]: statuses module
- 2019-02-20 00:41:41,456 - INFO @ connection.py [67]: 200: statuses/mentions_timeline: limit: 74
- 2019-02-20 00:41:41,713 - INFO @ connection.py [67]: 200: statuses/user_timeline: limit: 899
- 2019-02-20 00:41:42,080 - INFO @ connection.py [67]: 200: statuses/home_timeline: limit: 14
- 2019-02-20 00:41:42,279 - INFO @ connection.py [67]: 200: statuses/retweets_of_me: limit: 74
- 2019-02-20 00:41:42,486 - INFO @ connection.py [67]: 200: statuses/retweets/1033555529187172352: limit: 74
- 2019-02-20 00:41:42,645 - INFO @ connection.py [67]: 200: statuses/show: limit: 899
- 2019-02-20 00:41:42,982 - INFO @ connection.py [67]: 200: statuses/retweet/1033555529187172352: limit: inf
- 2019-02-20 00:41:43,183 - INFO @ connection.py [67]: 200: statuses/unretweet/1033555529187172352: limit: inf
- 2019-02-20 00:41:48,422 - INFO @ connection.py [67]: 200: oembed?url=https%3A%2F%2Ftwitter: limit: 179
- 2019-02-20 00:41:48,932 - INFO @ connection.py [67]: 200: statuses/retweeters/ids: limit: 74
- 2019-02-20 00:41:49,114 - INFO @ connection.py [67]: 200: statuses/lookup: limit: 899
- 2019-02-20 00:41:49,360 - INFO @ connection.py [67]: 200: statuses/update: limit: inf
- 2019-02-20 00:41:50,587 - INFO @ connection.py [67]: 200: statuses/user_timeline: limit: 898
- 2019-02-20 00:41:50,814 - INFO @ connection.py [67]: 200: statuses/destroy: limit: inf
- 2019-02-20 00:41:50,816 - INFO @ driver.py [43]: [PASS]: statuses module
- 2019-02-20 00:41:50,816 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:41:55,818 - INFO @ driver.py [35]: [TESTING]: saved_searches module
- 2019-02-20 00:41:56,055 - INFO @ connection.py [67]: 200: saved_searches/create: limit: inf
- 2019-02-20 00:41:56,206 - INFO @ connection.py [67]: 200: saved_searches/list: limit: 14
- 2019-02-20 00:41:56,403 - INFO @ connection.py [67]: 200: saved_searches/show/1098020260333215744: limit: inf
- 2019-02-20 00:41:56,670 - INFO @ connection.py [67]: 200: saved_searches/destroy/1098020260333215744: limit: inf
- 2019-02-20 00:41:56,672 - INFO @ driver.py [43]: [PASS]: saved_searches module
- 2019-02-20 00:41:56,672 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:01,677 - INFO @ driver.py [35]: [TESTING]: mutes module
- 2019-02-20 00:42:01,894 - INFO @ connection.py [67]: 200: mutes/users/create: limit: inf
- 2019-02-20 00:42:02,119 - INFO @ connection.py [67]: 200: mutes/users/ids: limit: 14
- 2019-02-20 00:42:02,350 - INFO @ connection.py [67]: 200: mutes/users/list: limit: 14
- 2019-02-20 00:42:02,642 - INFO @ connection.py [67]: 200: mutes/users/destroy: limit: inf
- 2019-02-20 00:42:02,643 - INFO @ driver.py [43]: [PASS]: mutes module
- 2019-02-20 00:42:02,643 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:07,648 - INFO @ driver.py [35]: [TESTING]: media module
- 2019-02-20 00:42:07,651 - INFO @ base64encode.py [23]: test_img.jpg successfully encoded to base64.
- 2019-02-20 00:42:08,370 - INFO @ connection.py [67]: 200: : limit: 499
- 2019-02-20 00:42:08,372 - INFO @ driver.py [43]: [PASS]: media module
- 2019-02-20 00:42:08,372 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:13,377 - INFO @ driver.py [35]: [TESTING]: lists module
- 2019-02-20 00:42:13,551 - INFO @ connection.py [67]: 200: lists/create: limit: inf
- 2019-02-20 00:42:13,793 - INFO @ connection.py [67]: 200: lists/list: limit: 14
- 2019-02-20 00:42:13,985 - INFO @ connection.py [67]: 200: lists/statuses: limit: 899
- 2019-02-20 00:42:14,609 - INFO @ connection.py [67]: 200: lists/memberships: limit: 74
- 2019-02-20 00:42:14,817 - INFO @ connection.py [67]: 200: lists/subscribers: limit: 179
- 2019-02-20 00:42:14,970 - INFO @ connection.py [67]: 200: lists/members: limit: 899
- 2019-02-20 00:42:15,176 - INFO @ connection.py [67]: 200: lists/update: limit: inf
- 2019-02-20 00:42:15,358 - INFO @ connection.py [67]: 200: lists/show: limit: 74
- 2019-02-20 00:42:15,740 - INFO @ connection.py [67]: 200: lists/subscriptions: limit: 14
- 2019-02-20 00:42:15,963 - INFO @ connection.py [67]: 200: lists/ownerships: limit: 14
- 2019-02-20 00:42:16,216 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/lists/members/create.json?list_id=1098020333892890624&screen_name=MegaDopeBeatz
- 2019-02-20 00:42:16,488 - INFO @ connection.py [67]: 200: lists/members/create_all: limit: inf
- 2019-02-20 00:42:16,671 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/lists/members/show.json?list_id=1098020333892890624&screen_name=MegaDopeBeatz&include_entities=False&skip_status=False
- 2019-02-20 00:42:16,876 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/lists/members/destroy.json?list_id=1098020333892890624&screen_name=MegaDopeBeatz
- 2019-02-20 00:42:17,062 - INFO @ connection.py [67]: 200: lists/members/destroy_all: limit: inf
- 2019-02-20 00:42:17,349 - INFO @ connection.py [67]: 200: lists/destroy: limit: inf
- 2019-02-20 00:42:17,545 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/lists/subscribers/create.json?list_id=102476661
- 2019-02-20 00:42:17,698 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/lists/subscribers/show.json?list_id=102476661&screen_name=ChrisHamberg&include_entities=False&skip_status=False
- 2019-02-20 00:42:17,937 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/lists/subscribers/destroy.json?list_id=102476661
- 2019-02-20 00:42:17,939 - INFO @ driver.py [43]: [PASS]: lists module
- 2019-02-20 00:42:17,939 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:22,945 - INFO @ driver.py [35]: [TESTING]: geo module
- 2019-02-20 00:42:23,130 - INFO @ connection.py [67]: 200: geo/reverse_geocode: limit: 14
- 2019-02-20 00:42:23,299 - INFO @ connection.py [67]: 200: geo/id/00bc52ea1fc46565: limit: inf
- 2019-02-20 00:42:23,487 - INFO @ connection.py [67]: 200: geo/search: limit: 14
- 2019-02-20 00:42:23,488 - INFO @ driver.py [43]: [PASS]: geo module
- 2019-02-20 00:42:23,488 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:28,491 - INFO @ driver.py [35]: [TESTING]: friendships module
- 2019-02-20 00:42:28,681 - INFO @ connection.py [67]: 200: friendships/no_retweets/ids: limit: 14
- 2019-02-20 00:42:28,872 - INFO @ connection.py [67]: 200: friendships/incoming: limit: 14
- 2019-02-20 00:42:29,027 - INFO @ connection.py [67]: 200: friendships/outgoing: limit: 14
- 2019-02-20 00:42:29,213 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/friendships/create.json?screen_name=MegaDopeBeatz&follow=False
- 2019-02-20 00:42:29,431 - ERROR @ connection.py [59]: 404 Client Error: Not Found for url: https://api.twitter.com/1.1/friendships/update.json?screen_name=MegaDopeBeatz&device=True&retweets=False
- 2019-02-20 00:42:29,653 - INFO @ connection.py [67]: 200: friendships/show: limit: 179
- 2019-02-20 00:42:29,858 - INFO @ connection.py [67]: 200: friendships/lookup: limit: 14
- 2019-02-20 00:42:29,859 - ERROR @ evaluate.py [14]: [FAIL]: friendships.create 
- 2019-02-20 00:42:29,867 - ERROR @ evaluate.py [14]: [FAIL]: friendships.update 
- 2019-02-20 00:42:29,867 - ERROR @ driver.py [41]: [FAIL]: friendships module
- 2019-02-20 00:42:29,867 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:34,873 - INFO @ driver.py [35]: [TESTING]: friends module
- 2019-02-20 00:42:35,044 - INFO @ connection.py [67]: 200: friends/ids: limit: 14
- 2019-02-20 00:42:35,291 - INFO @ connection.py [67]: 200: friends/list: limit: 14
- 2019-02-20 00:42:35,294 - INFO @ driver.py [43]: [PASS]: friends module
- 2019-02-20 00:42:35,294 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:40,297 - INFO @ driver.py [35]: [TESTING]: followers module
- 2019-02-20 00:42:40,467 - INFO @ connection.py [67]: 200: followers/ids: limit: 14
- 2019-02-20 00:42:40,827 - INFO @ connection.py [67]: 200: followers/list: limit: 14
- 2019-02-20 00:42:40,828 - INFO @ driver.py [43]: [PASS]: followers module
- 2019-02-20 00:42:40,828 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:45,834 - INFO @ driver.py [35]: [TESTING]: favorites module
- 2019-02-20 00:42:46,098 - INFO @ connection.py [67]: 200: favorites/list: limit: 74
- 2019-02-20 00:42:46,355 - INFO @ connection.py [67]: 200: favorites/create: limit: inf
- 2019-02-20 00:42:46,602 - INFO @ connection.py [67]: 200: favorites/destroy: limit: inf
- 2019-02-20 00:42:46,603 - INFO @ driver.py [43]: [PASS]: favorites module
- 2019-02-20 00:42:46,604 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:42:51,607 - INFO @ driver.py [35]: [TESTING]: direct_messages module
- 2019-02-20 00:42:52,102 - INFO @ connection.py [67]: 200: direct_messages/events/show: limit: 14
- 2019-02-20 00:42:52,536 - ERROR @ connection.py [59]: 403 Client Error: Forbidden for url: https://api.twitter.com/1.1/direct_messages/events/new.json
- 2019-02-20 00:42:52,723 - INFO @ connection.py [67]: 200: direct_messages/events/list: limit: 14
- 2019-02-20 00:42:53,244 - INFO @ connection.py [67]: 204: direct_messages/mark_read: limit: 999
- 2019-02-20 00:42:58,450 - INFO @ connection.py [67]: 204: direct_messages/indicate_typing: limit: inf
- 2019-02-20 00:42:58,451 - INFO @ driver.py [43]: [PASS]: direct_messages module
- 2019-02-20 00:42:58,451 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:43:03,457 - INFO @ driver.py [35]: [TESTING]: collections module
- 2019-02-20 00:43:03,699 - INFO @ connection.py [67]: 200: account/verify_credentials: limit: 74
- 2019-02-20 00:43:03,910 - INFO @ connection.py [67]: 200: statuses/user_timeline: limit: 897
- 2019-02-20 00:43:04,204 - INFO @ connection.py [67]: 200: collections/create: limit: inf
- 2019-02-20 00:43:04,482 - INFO @ connection.py [67]: 200: collections/list: limit: 999
- 2019-02-20 00:43:04,740 - INFO @ connection.py [67]: 200: collections/entries: limit: 999
- 2019-02-20 00:43:04,994 - INFO @ connection.py [67]: 200: collections/show: limit: 999
- 2019-02-20 00:43:05,210 - INFO @ connection.py [67]: 200: collections/entries/add: limit: inf
- 2019-02-20 00:43:05,421 - INFO @ connection.py [67]: 200: collections/entries/add: limit: inf
- 2019-02-20 00:43:05,630 - INFO @ connection.py [67]: 200: collections/entries/curate: limit: inf
- 2019-02-20 00:43:05,833 - INFO @ connection.py [67]: 200: collections/entries/move: limit: inf
- 2019-02-20 00:43:06,084 - INFO @ connection.py [67]: 200: collections/entries/remove: limit: inf
- 2019-02-20 00:43:06,345 - INFO @ connection.py [67]: 200: collections/update: limit: inf
- 2019-02-20 00:43:06,546 - INFO @ connection.py [67]: 200: collections/destroy: limit: inf
- 2019-02-20 00:43:06,547 - INFO @ driver.py [43]: [PASS]: collections module
- 2019-02-20 00:43:06,548 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:43:11,552 - INFO @ driver.py [35]: [TESTING]: blocks module
- 2019-02-20 00:43:12,021 - INFO @ connection.py [67]: 200: blocks/list: limit: 14
- 2019-02-20 00:43:12,201 - INFO @ connection.py [67]: 200: blocks/ids: limit: 14
- 2019-02-20 00:43:12,530 - INFO @ connection.py [67]: 200: blocks/create: limit: inf
- 2019-02-20 00:43:12,852 - INFO @ connection.py [67]: 200: blocks/destroy: limit: inf
- 2019-02-20 00:43:12,854 - INFO @ driver.py [43]: [PASS]: blocks module
- 2019-02-20 00:43:12,854 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:43:17,859 - INFO @ driver.py [35]: [TESTING]: application module
- 2019-02-20 00:43:17,859 - INFO @ driver.py [43]: [PASS]: application module
- 2019-02-20 00:43:17,859 - INFO @ driver.py [49]:  sleeping for 5 seconds
- 2019-02-20 00:43:22,865 - INFO @ driver.py [35]: [TESTING]: account module
- 2019-02-20 00:43:23,029 - INFO @ connection.py [67]: 200: account/settings: limit: 14
- 2019-02-20 00:43:23,289 - INFO @ connection.py [67]: 200: account/verify_credentials: limit: 73
- 2019-02-20 00:43:23,588 - INFO @ connection.py [67]: 200: account/settings: limit: inf
- 2019-02-20 00:43:23,848 - INFO @ connection.py [67]: 200: account/settings: limit: inf
- 2019-02-20 00:43:24,093 - INFO @ connection.py [67]: 200: account/update_profile: limit: 14
- 2019-02-20 00:43:24,331 - INFO @ connection.py [67]: 200: account/update_profile: limit: 13
- 2019-02-20 00:43:24,334 - INFO @ base64encode.py [23]: _test_img.jpg successfully encoded to base64.
- 2019-02-20 00:43:25,030 - INFO @ connection.py [67]: 200: account/update_profile_image: limit: inf
- 2019-02-20 00:43:25,032 - INFO @ base64encode.py [23]: test_img.jpg successfully encoded to base64.
- 2019-02-20 00:43:25,856 - INFO @ connection.py [67]: 200: account/update_profile_image: limit: inf
- 2019-02-20 00:43:25,860 - INFO @ base64encode.py [23]: test_banner.png successfully encoded to base64.
- 2019-02-20 00:43:27,549 - INFO @ connection.py [67]: 201: account/update_profile_banner: limit: inf
- 2019-02-20 00:43:28,080 - INFO @ connection.py [67]: 200: account/remove_profile_banner: limit: inf
- 2019-02-20 00:43:28,082 - INFO @ driver.py [43]: [PASS]: account module
- 2019-02-20 00:43:28,082 - ERROR @ driver.py [58]: completed package test with 2 failure(s).
+ 2019-12-13 00:41:01,703 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 00:41:01,704 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 00:41:01,704 - INFO @ twitter.py [93]: 0x7fd66e923a58 has been defined
+ 2019-12-13 00:42:46,138 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 00:42:46,140 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 00:48:03,958 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 00:48:03,958 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 00:48:03,959 - INFO @ twitter.py [93]: 0x7f9e5013ea58 has been defined
+ 2019-12-13 00:49:37,051 - WARNING @ session.py [10]:  no account registered in db
+ 2019-12-13 00:49:37,052 - WARNING @ session.py [11]: manual authorization required
+ 2019-12-13 00:49:37,052 - WARNING @ session.py [12]: twitter.help() for help
+ 2019-12-13 00:49:43,201 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 00:49:43,202 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 01:55:33,982 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 01:55:33,983 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 01:55:33,983 - INFO @ twitter.py [93]: 0x7f77fbf73a20 has been defined
+ 2019-12-13 01:55:43,077 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 01:55:43,079 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 01:56:36,311 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 01:56:36,311 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 01:56:36,312 - INFO @ twitter.py [93]: 0x7ff46ff56a58 has been defined
+ 2019-12-13 01:56:45,089 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 01:56:45,090 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:00:24,912 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:00:24,912 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:00:24,913 - INFO @ twitter.py [93]: 0x7efe5a2c0a58 has been defined
+ 2019-12-13 02:00:34,965 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 02:00:34,966 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:08:14,060 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:08:14,061 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:08:14,061 - INFO @ twitter.py [93]: 0x7f4d5d98fa58 has been defined
+ 2019-12-13 02:08:23,470 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 02:08:23,471 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:11:05,791 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:11:05,792 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:11:05,792 - INFO @ twitter.py [93]: 0x7f7750e5ca58 has been defined
+ 2019-12-13 02:11:18,485 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 02:11:18,486 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:11:55,564 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:11:55,564 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:11:55,565 - INFO @ twitter.py [93]: 0x7fa7894a8a58 has been defined
+ 2019-12-13 02:12:10,895 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 02:12:10,897 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:14:07,962 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:14:07,963 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:14:07,963 - INFO @ twitter.py [93]: 0x7f7748d0ca58 has been defined
+ 2019-12-13 02:14:23,706 - WARNING @ session.py [10]:  no account registered in db
+ 2019-12-13 02:14:23,706 - WARNING @ session.py [11]: manual authorization required
+ 2019-12-13 02:14:23,706 - WARNING @ session.py [12]: twitter.help() for help
+ 2019-12-13 02:20:28,218 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:20:28,219 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:20:28,219 - INFO @ twitter.py [93]: 0x7ff9974e1a58 has been defined
+ 2019-12-13 02:20:47,566 - WARNING @ session.py [10]:  no account registered in db
+ 2019-12-13 02:20:47,567 - WARNING @ session.py [11]: manual authorization required
+ 2019-12-13 02:20:47,567 - WARNING @ session.py [12]: twitter.help() for help
+ 2019-12-13 02:20:54,995 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 02:20:54,996 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:27:10,806 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:27:10,807 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:27:10,807 - INFO @ twitter.py [93]: 0x7f83798b4a58 has been defined
+ 2019-12-13 02:27:10,807 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 02:27:28,301 - INFO @ twitter.py [146]: loaded OAuth ChrisHamberg
+ 2019-12-13 02:27:28,302 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:28:15,213 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:28:15,214 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:28:15,214 - INFO @ twitter.py [93]: 0x7f1dac58ba58 has been defined
+ 2019-12-13 02:28:26,821 - WARNING @ session.py [10]:  no account registered in db
+ 2019-12-13 02:28:26,822 - WARNING @ session.py [11]: manual authorization required
+ 2019-12-13 02:28:26,822 - WARNING @ session.py [12]: twitter.help() for help
+ 2019-12-13 02:34:02,696 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:34:02,697 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:34:02,697 - INFO @ twitter.py [93]: 0x7fc657298a58 has been defined
+ 2019-12-13 02:34:02,697 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 02:34:05,869 - INFO @ twitter.py [146]: loaded OAuth ChrisHamberg
+ 2019-12-13 02:34:05,870 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:42:26,031 - INFO @ twitter.py [53]: loaded application.registry.model.Database
+ 2019-12-13 02:42:26,032 - INFO @ twitter.py [69]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:42:26,032 - INFO @ twitter.py [98]: 0x7f0241b70a20 has been defined
+ 2019-12-13 02:42:34,812 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 02:42:34,814 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:44:16,987 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 02:44:16,988 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:44:16,988 - INFO @ twitter.py [99]: 0x7f64e2ca7a58 has been defined
+ 2019-12-13 02:44:25,320 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 02:44:25,321 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:45:31,755 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 02:45:31,756 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:45:31,756 - INFO @ twitter.py [99]: 0x7f59833bba58 has been defined
+ 2019-12-13 02:54:23,794 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 02:54:23,795 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:54:23,795 - INFO @ twitter.py [99]: 0x7ff22f053a58 has been defined
+ 2019-12-13 02:54:53,500 - INFO @ session.py [45]: ['ChrisHamberg', 'ChrisHamberg']
+ 2019-12-13 02:54:56,474 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 02:54:56,475 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 02:58:09,538 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 02:58:09,539 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 02:58:09,539 - INFO @ twitter.py [99]: 0x7fbdae0efa58 has been defined
+ 2019-12-13 02:59:43,768 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 02:59:45,942 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 02:59:45,944 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:00:07,173 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:00:07,174 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:00:07,174 - INFO @ twitter.py [99]: 0x7ff793aa1a58 has been defined
+ 2019-12-13 03:01:07,179 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 03:01:15,773 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:01:15,773 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:01:15,774 - INFO @ twitter.py [99]: 0x7f9173b8ea58 has been defined
+ 2019-12-13 03:01:22,857 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 03:01:22,858 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:02:30,370 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:02:30,371 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:02:30,371 - INFO @ twitter.py [99]: 0x7fdbdca54a58 has been defined
+ 2019-12-13 03:08:37,204 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:08:37,204 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:08:37,205 - INFO @ twitter.py [99]: 0x7f33e4350a58 has been defined
+ 2019-12-13 03:08:40,369 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 03:08:40,370 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:09:04,106 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:09:04,106 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:09:04,107 - INFO @ twitter.py [99]: 0x7f11f586aa58 has been defined
+ 2019-12-13 03:15:42,934 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:15:42,934 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:15:42,935 - INFO @ twitter.py [99]: 0x7fef7b750a58 has been defined
+ 2019-12-13 03:16:54,368 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 03:16:54,369 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:17:48,566 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:17:48,566 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:17:48,567 - INFO @ twitter.py [99]: 0x7f93f69a0a58 has been defined
+ 2019-12-13 03:17:57,709 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 03:17:57,710 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:19:31,692 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:19:31,692 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:19:31,693 - INFO @ twitter.py [99]: 0x7fbb4379da58 has been defined
+ 2019-12-13 03:19:44,908 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 03:19:47,734 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 03:19:47,735 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:25:03,282 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:25:03,283 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:25:03,283 - INFO @ twitter.py [99]: 0x7f310cc13a58 has been defined
+ 2019-12-13 03:28:00,086 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 03:28:00,087 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:29:09,395 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:29:09,396 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:29:09,396 - INFO @ twitter.py [99]: 0x7fab51176a58 has been defined
+ 2019-12-13 03:29:13,279 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 03:29:13,281 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:32:20,259 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:32:20,260 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:32:20,260 - INFO @ twitter.py [99]: 0x7f2abf26da58 has been defined
+ 2019-12-13 03:32:26,717 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 03:32:26,719 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:32:35,903 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:32:35,903 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:32:35,904 - INFO @ twitter.py [99]: 0x7f48bb15ca58 has been defined
+ 2019-12-13 03:32:35,904 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 03:32:42,040 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 03:32:42,041 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:35:51,008 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:35:51,008 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:35:51,008 - INFO @ twitter.py [99]: 0x7fe6980d8a58 has been defined
+ 2019-12-13 03:36:53,371 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 03:36:53,373 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:41:57,758 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:41:57,759 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:41:57,759 - INFO @ twitter.py [99]: 0x7f47c8f57a58 has been defined
+ 2019-12-13 03:46:34,507 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:46:34,508 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:46:34,508 - INFO @ twitter.py [99]: 0x7fbcf459da58 has been defined
+ 2019-12-13 03:47:19,956 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 03:47:19,958 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:50:16,453 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:50:16,453 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:50:16,454 - INFO @ twitter.py [99]: 0x7faa7c60fa58 has been defined
+ 2019-12-13 03:50:49,632 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 03:50:49,634 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:54:33,523 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:54:33,524 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:54:33,524 - INFO @ twitter.py [99]: 0x7fdad4734a20 has been defined
+ 2019-12-13 03:55:18,202 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 03:55:20,288 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 03:55:20,289 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:56:50,821 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:56:50,822 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:56:50,822 - INFO @ twitter.py [99]: 0x7fc3f0dafa20 has been defined
+ 2019-12-13 03:56:58,595 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 03:56:58,597 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 03:58:07,492 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 03:58:07,493 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 03:58:07,493 - INFO @ twitter.py [99]: 0x7f7ed470fa58 has been defined
+ 2019-12-13 03:59:09,126 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 03:59:11,178 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 03:59:11,180 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:03:22,531 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:03:22,532 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:03:22,532 - INFO @ twitter.py [99]: 0x7fb325bc4a58 has been defined
+ 2019-12-13 04:03:50,311 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 04:03:53,140 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 04:03:53,142 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:05:57,522 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:05:57,522 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:05:57,523 - INFO @ twitter.py [99]: 0x7f9063bbda58 has been defined
+ 2019-12-13 04:06:05,477 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 04:06:05,480 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:08:45,244 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:08:45,245 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:08:45,245 - INFO @ twitter.py [99]: 0x7f7d10e94a20 has been defined
+ 2019-12-13 04:08:55,176 - WARNING @ session.py [31]: Not logging in.
+ 2019-12-13 04:08:55,179 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:10:29,087 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:10:29,088 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:10:29,088 - INFO @ twitter.py [99]: 0x7fe6caa4aa58 has been defined
+ 2019-12-13 04:10:50,841 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 04:10:52,228 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 04:10:52,229 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:12:57,142 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:12:57,142 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:12:57,143 - INFO @ twitter.py [99]: 0x7f6c9738ea58 has been defined
+ 2019-12-13 04:13:17,428 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 04:13:21,539 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 04:13:21,540 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:14:29,097 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:14:29,098 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:14:29,099 - INFO @ twitter.py [99]: 0x7f4463f6ea58 has been defined
+ 2019-12-13 04:14:29,099 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 04:14:34,751 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 04:14:34,752 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:15:50,392 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:15:50,393 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:15:50,393 - INFO @ twitter.py [99]: 0x7fe2f293fa58 has been defined
+ 2019-12-13 04:15:50,394 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 04:15:51,658 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 04:15:51,660 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:17:30,514 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:17:30,515 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:17:30,515 - INFO @ twitter.py [99]: 0x7f8d4b5c5a58 has been defined
+ 2019-12-13 04:17:42,010 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 04:17:43,813 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 04:17:43,814 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:18:20,977 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 04:18:20,978 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 04:18:20,978 - INFO @ twitter.py [99]: 0x7fd28ef4ea58 has been defined
+ 2019-12-13 04:18:20,979 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 04:18:23,925 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 04:18:23,926 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 04:19:21,522 - INFO @ twitter.py [201]: CACHE LOCKED: True
+ 2019-12-13 04:19:21,686 - INFO @ connection.py [67]: 200: application/rate_limit_status: limit: inf
+ 2019-12-13 04:19:21,688 - INFO @ twitter.py [201]: CACHE LOCKED: False
+ 2019-12-13 04:19:21,850 - INFO @ connection.py [67]: 200: account/verify_credentials: limit: 68
+ 2019-12-13 16:11:31,968 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 16:11:31,969 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 16:11:31,969 - INFO @ twitter.py [99]: 0x7fa26cef5ef0 has been defined
+ 2019-12-13 16:12:28,732 - INFO @ twitter.py [152]: loaded OAuth None
+ 2019-12-13 16:12:28,733 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 16:14:20,492 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 16:14:20,492 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 16:14:20,493 - INFO @ twitter.py [99]: 0x7f0f3b89ba58 has been defined
+ 2019-12-13 16:16:50,961 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 16:16:50,963 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 16:18:43,371 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 16:18:43,372 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 16:18:43,372 - INFO @ twitter.py [99]: 0x7f624b5baa58 has been defined
+ 2019-12-13 16:21:41,330 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 16:21:41,331 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 16:24:47,453 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 16:24:47,454 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 16:24:47,454 - INFO @ twitter.py [99]: 0x7f1d89794a58 has been defined
+ 2019-12-13 16:26:02,854 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 16:26:02,855 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 16:26:22,864 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 16:26:22,865 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 16:26:22,865 - INFO @ twitter.py [99]: 0x7fa77ef4fa58 has been defined
+ 2019-12-13 16:31:40,153 - INFO @ session.py [45]: ['ChrisHamberg', 'ChrisHamberg']
+ 2019-12-13 16:31:41,926 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 16:31:41,928 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 16:31:53,273 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 16:31:53,273 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 16:31:53,274 - INFO @ twitter.py [99]: 0x7fdd94d5fa20 has been defined
+ 2019-12-13 16:32:52,420 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 16:32:53,584 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 16:32:53,585 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 16:38:57,134 - INFO @ twitter.py [54]: loaded application.registry.model.Database
+ 2019-12-13 16:38:57,135 - INFO @ twitter.py [70]: injected API: account, application, blocks, collections, direct_messages, favorites, followers, friends, friendships, geo, lists, media, mutes, saved_searches, statuses, trends, users
+ 2019-12-13 16:38:57,136 - INFO @ twitter.py [99]: 0x7f766f19eeb8 has been defined
+ 2019-12-13 16:40:32,790 - INFO @ session.py [45]: ['ChrisHamberg']
+ 2019-12-13 16:40:35,744 - INFO @ twitter.py [152]: loaded OAuth ChrisHamberg
+ 2019-12-13 16:40:35,745 - INFO @ session.py [38]: No module named 'IPython'
+ 2019-12-13 16:40:50,884 - INFO @ twitter.py [201]: CACHE LOCKED: True
+ 2019-12-13 16:40:51,138 - INFO @ connection.py [67]: 200: application/rate_limit_status: limit: inf
+ 2019-12-13 16:40:51,140 - INFO @ twitter.py [201]: CACHE LOCKED: False
+ 2019-12-13 16:40:51,394 - INFO @ connection.py [67]: 200: account/verify_credentials: limit: 73

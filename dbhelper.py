@@ -2,6 +2,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session
 from sqlalchemy.orm import sessionmaker
 import pathlib, sqlalchemy, sys, os
+import inspect, logging
+
 
 class SQLAlchemy():
 
@@ -20,13 +22,15 @@ class SQLAlchemy():
 
     def __exit__(self, t, u, v):
         try:
-            self.temp.commit()
+            # self.temp.commit()
+            pass
         except Exception as error:
+            log.error(f'{__class__} : {str(error)}')
             self.temp.rollback()
             raise
-        finally:
-            self.temp.close()
-            del self.temp
+        #self.temp.close()
+        # del self.temp
+
 
 location = sys.argv[0] or __name__.split('.')[0]
 parent = pathlib.Path(location).absolute()
@@ -34,5 +38,14 @@ if 'test' in str(parent):
     parent = os.sep.join(str(parent).split(os.sep)[:-1])
 database = pathlib.Path(parent, 'database.sql')
 
+
 engine = sqlalchemy.create_engine(f'sqlite:////{database}')
 database = SQLAlchemy(engine)
+
+
+log = logging.getLogger(__name__)
+handler = logging.FileHandler(pathlib.Path(parent, 'data.log'))
+handler.setLevel(logging.INFO)
+formatter = logging.Formatter(' %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+log.addHandler(handler)

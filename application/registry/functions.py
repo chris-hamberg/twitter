@@ -2,10 +2,14 @@
 ### twitter/application/registry/prompt.py module. Hidden away deep in the 
 ### recesses of its own model; the very gaze of which is said to turn mortal
 ### men to stone statues. Much the same as gazing at Medusa.
-try:
-    from twitter.application.subprocess.subroutines import clear, wait
-except ModuleNotFoundError as main:
-    from application.subprocess.subroutines import clear, wait
+if __name__ != '__main__' and __name__ != 'functions':
+    try:
+        from twitter.application.subprocess.subroutines import clear, wait
+    except ModuleNotFoundError as main:
+        from application.subprocess.subroutines import clear, wait
+else:
+    clear = lambda: None
+    wait  = lambda: None
 
 def try_again():
     if input(error_msg).lower() == 'n': ### prompt the user.
@@ -23,8 +27,8 @@ def view(users):
     print('#'+' '*29+'Registered Accounts'+' '*30+'#')
     print('#'*80)
     print(f'{users.count()} accounts(s) registered\n')
-    for user in users:
-        print(f'{user.id}. {user.name}')
+    for e, user in enumerate(users.all()):
+        print(f'{e+1}. {user.name}')
 
 def select(user):
     while True:        

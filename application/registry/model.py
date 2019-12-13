@@ -1,3 +1,5 @@
+# NOTE used for debugging
+#if __name__ != '__main__' and __name__ != 'model':
 try:
     from twitter.application.subprocess.subroutines import clear
     from twitter.dbhelper import database
@@ -9,6 +11,22 @@ finally:
     from requests_oauthlib import OAuth1
     from collections import OrderedDict
     import requests
+
+# NOTE used for debugging
+'''
+else:
+    clear = lambda: None
+    from sqlalchemy import Column, Integer, Text, create_engine
+    from sqlalchemy.ext.declarative import declarative_base
+    from requests_oauthlib import OAuth1
+    from collections import OrderedDict
+    from types import SimpleNamespace
+    import requests
+
+    engine = create_engine('sqlite://')
+    database = SimpleNamespace()
+    database.Model = declarative_base()
+'''
 
 #########################################################
 # NOTE all of these classes are used by the prompt module
@@ -108,13 +126,16 @@ class User(database.Model):
         
         help_msg = ('(hint: use ctrl shift v to paste clipboard '
                     'contents into the terminal.)')
-    
+        
         fields = OrderedDict({
             0: lambda: input('\nEnter API KEY: '),
             1: lambda: input('\nEnter API SECRET: '),
             2: lambda: input('\nEnter ACCESS TOKEN: '),
             3: lambda: input('\nEnter TOKEN SECRET: ')     
             })
+        
+        # NOTE used for debugging
+        #from application.registry.oauth import AUTH as fields
 
         def process(key):
             self.clear()
@@ -122,6 +143,7 @@ class User(database.Model):
             print(help_msg)
             return fields[key]() 
         data = [process(key) for key in fields]
+        self.columns = dict()
 
         for e, attribute in enumerate((
             'api_key', 'api_secret', 'access_token', 'token_secret'
@@ -140,4 +162,6 @@ class User(database.Model):
         ### to pickle an object consisting of an anonymous function.
         self.clear = None
 
+# NOTE used for debugging
+#if __name__ != '__main__' and __name__ != 'model':
 database.create_tables()

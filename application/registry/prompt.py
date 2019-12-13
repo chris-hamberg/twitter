@@ -1,3 +1,5 @@
+# NOTE used for debugging
+# if __name__ != '__main__':
 try:
     from twitter.application.registry.model import Requests, User
     from twitter.application.registry.model import OrderedDict
@@ -11,6 +13,19 @@ except ModuleNotFoundError as main:
     from dbhelper import database
 finally:
     import sqlalchemy, sys, os
+    twitter = None
+
+# NOTE used for debugging
+'''
+else:
+    clear = lambda: None
+    wait  = lambda: None
+    from model import Requests, User
+    from collections import OrderedDict
+    from sqlalchemy import create_engine
+    from functions import *
+    database = create_engine('sqlite://')
+'''
 
 def add():
     
@@ -22,36 +37,46 @@ def add():
         request(user)
         clear()
 
+        # NOTE used for debugging
+        #request._is_invalid = False #request(user)
+        #user.name = 'ChrisHamberg'
+
         if request.is_invalid:
             try_again()
         else:
             user.lock()
+            twitter._accounts.append(user)
             with database as session:
                 session.add(user)
-                show_message(user)
+                session.commit()
+            show_message(user)
+
 
 def remove():
     
-    user = database_select()
+    users = database_select()
 
-    if user.count():
-        view(user)
+    if users.count():
+        view(users)
 
-        id = select(user)
+        id = select(users)
         with database as session:
             query = session.query(User).filter(User.id == id)
             user = query.first()
             confirm_delete(user)
             query.delete()
-            
+            session.commit()
+        twitter._accounts.pop(id)
+           
+
 def show():
-    user = database_select()
-    view(user)
+    users = database_select()
+    view(users)
 
 def database_select():
     with database as session:
-        user = session.query(User)
-    return user
+        users = session.query(User)
+    return users
 
 
 def prompt():

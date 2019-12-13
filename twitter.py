@@ -42,14 +42,15 @@ class Twitter:
         self.log.set_level = lambda level: self._log.setLevel(level.upper(
             ))
         self._name = hex(id(self))
-        self.database = database
+        self.database  = database
+        self._accounts = []
 
         ######### Import authorized users from registry. ##########
         with self.database as session:
             query = session.query(User)
-            self._accounts = [
+            self._accounts.extend([
             User(**account) for account in session.execute(query)
-            ]
+            ])
         self.log.info('loaded application.registry.model.Database')
         self.username = 'Not logging in.'
         ###########################################################
@@ -69,6 +70,11 @@ class Twitter:
             self.log.info('injected {self}'.format_map(vars(
                 )))
         ###########################################################
+
+        try:
+            twitter.application.registry.prompt.twitter = self
+        except NameError as running_as_main:
+            application.registry.prompt.twitter = self
 
 
         ####################### The API ########################
